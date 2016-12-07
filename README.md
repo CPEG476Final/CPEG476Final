@@ -11,16 +11,22 @@ This project additionally focused largely on correctly dynamically allocating an
 This project creates a command-line minesweeper program that can be run from any linux command line.  
 
 When running the program there are 3 flags that can be sent:
+
 -w or -width: The width of the minesweeper board, this can be any number between 1 and 19.
+
 -h or -height: The height of the minesweeper board, this can be any number between 1 and 19.
+
 -m or -mines: The total number of mines to be randomly placed on the board. This can be any number between 1 and the total number of cells on the board.
 
 This is the traditional minesweeper game with the rules we are all used to.  You keep selecting a square until you have found all cells without mines or you accidentally trip a mine.  The easy to use command line interface allows for easy selection of the square that you wish to select.
 
 Cell Representations:
 '-' - Unopened Cell
+
 '1-8' - Opened Cell not containing a mine stating how many of it's neighbors have mines
+
 ' ' - Opened Cell not containing a mine with no neighbor mines
+
 '*' - Opened Cell containing a mine
 
 #3) Gee-Mail:
@@ -29,9 +35,13 @@ This project creates a local encrypted email platform.
 All stored data is stored in gmail.db, no passwords or passphrases are stored in plain text.
 
 The platform comes with the following functionalities:
+
 1) Register a new user
+
 2) Log in as a registered user
+
 3) Send an email to any other registered user
+
 4) Read (assuming you have the proper passphrase) any email sent to your username by another user
 
 This platform uses encryption in the following ways:
