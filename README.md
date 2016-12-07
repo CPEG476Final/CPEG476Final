@@ -46,6 +46,7 @@ The platform comes with the following functionalities:
 4) Read (assuming you have the proper passphrase) any email sent to your username by another user
 
 This platform uses encryption in the following ways:
+
 1) All passwords are hashed using the SHA-256 hash and stored.  This way even if one were to gain access to that table they would not be able to find passwords.
 When a password is entered during login it is also hashed and then the two hashes are compared.
 
