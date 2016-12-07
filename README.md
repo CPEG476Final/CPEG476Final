@@ -21,6 +21,7 @@ When running the program there are 3 flags that can be sent:
 This is the traditional minesweeper game with the rules we are all used to.  You keep selecting a square until you have found all cells without mines or you accidentally trip a mine.  The easy to use command line interface allows for easy selection of the square that you wish to select.
 
 Cell Representations:
+
 '-' - Unopened Cell
 
 '1-8' - Opened Cell not containing a mine stating how many of it's neighbors have mines
