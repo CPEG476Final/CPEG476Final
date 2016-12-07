@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cpeg476final by CPEG476Final</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cpeg476final</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/CPEG476Final/CPEG476Final" class="btn">View on GitHub</a>
+      <a href="https://github.com/CPEG476Final/CPEG476Final/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/CPEG476Final/CPEG476Final/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="cpeg476final-3-c-projects" class="anchor" href="#cpeg476final-3-c-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CPEG476Final: 3 C++ Projects</h1>
+
+<h1>
+<a id="1-markovian-tweets-ceaser-salad" class="anchor" href="#1-markovian-tweets-ceaser-salad" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1) Markovian Tweets (Ceaser Salad):</h1>
+
+<p>The Markovian Tweets project takes a text file and generates a statement in the style of a tweet (&lt; 140 characters) in the style of the written text file provided.  Some text files are provided in the repository but you can easily substitue them for any other text file of your choice.</p>
+
+<p>This is accomplished by using a Markov model to decide sentence order.  It builds a simple first order Markov model, by tracking with what probability certain words follow others in the inputted text.</p>
+
+<p>This project additionally focused largely on correctly dynamically allocating and freeing memory to make sure that memory is not wasted since due to the possibility of a large text file it may be working with a lot of memory.  To accomplish this we used C++'s built in map data structure to build the Markov model.</p>
+
+<h1>
+<a id="2-minesweeper" class="anchor" href="#2-minesweeper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2) Minesweeper:</h1>
+
+<p>This project creates a command-line minesweeper program that can be run from any linux command line.  </p>
+
+<p>When running the program there are 3 flags that can be sent:</p>
+
+<p>-w or -width: The width of the minesweeper board, this can be any number between 1 and 19.</p>
+
+<p>-h or -height: The height of the minesweeper board, this can be any number between 1 and 19.</p>
+
+<p>-m or -mines: The total number of mines to be randomly placed on the board. This can be any number between 1 and the total number of cells on the board.</p>
+
+<p>This is the traditional minesweeper game with the rules we are all used to.  You keep selecting a square until you have found all cells without mines or you accidentally trip a mine.  The easy to use command line interface allows for easy selection of the square that you wish to select.</p>
+
+<p>Cell Representations:</p>
+
+<p>'-' - Unopened Cell</p>
+
+<p>'1-8' - Opened Cell not containing a mine stating how many of it's neighbors have mines</p>
+
+<p>' ' - Opened Cell not containing a mine with no neighbor mines</p>
+
+<p>'*' - Opened Cell containing a mine</p>
+
+<h1>
+<a id="3-gee-mail" class="anchor" href="#3-gee-mail" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3) Gee-Mail:</h1>
+
+<p>This project creates a local encrypted email platform.</p>
+
+<p>All stored data is stored in gmail.db, no passwords or passphrases are stored in plain text.</p>
+
+<p>The platform comes with the following functionalities:</p>
+
+<p>1) Register a new user</p>
+
+<p>2) Log in as a registered user</p>
+
+<p>3) Send an email to any other registered user</p>
+
+<p>4) Read (assuming you have the proper passphrase) any email sent to your username by another user</p>
+
+<p>This platform uses encryption in the following ways:</p>
+
+<p>1) All passwords are hashed using the SHA-256 hash and stored.  This way even if one were to gain access to that table they would not be able to find passwords.
+When a password is entered during login it is also hashed and then the two hashes are compared.</p>
+
+<p>2) All emails are encrypted using a SALSA20 Cypher.  When a user sends an email they enter a passphrase that is 32 characters or less which is to be used in encrypting the email.  When the user to whom the email was sent wants to read it, they must input the same passphrase or else they will not be able to see the message contents.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/CPEG476Final/CPEG476Final">Cpeg476final</a> is maintained by <a href="https://github.com/CPEG476Final">CPEG476Final</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
